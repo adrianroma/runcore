@@ -1,0 +1,27 @@
+{
+  "box:a":{
+         "attributes":
+                      {
+                      "skin":"theme:summer",
+                      "size":"big"
+                      },
+         "actions":{
+               "in":"go"
+               "out":"review"
+         },
+         "reactions":{
+               "input:actions:close":"close"
+         }
+         "node":{
+                 "text:c":{
+                           "attributes":{
+                                         "value":"Hello World"
+                                       }
+                           }
+                }
+  
+        }
+
+
+
+}
