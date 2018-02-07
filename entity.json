@@ -32,14 +32,14 @@
                
               
                        
-  }
+  },
   
   "input":{
         "id":"string",
         "user:name":"string",
         "user:email":"email",
         "user:password":"hidden",
-        "keyword:onkey":"listen:key"
+        "keyword:onkey":"listen:key",
         "button:id":"cache:id:value"
 
 }
