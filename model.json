@@ -13,7 +13,7 @@
                 "CHECK_SESSION":{ 
                                  "YES":"SESSION:STATE",
                                  "NOT":["REGISTER:CHECK_SESSION:YES==FALSE"]
-                               }
+                               },
                 "CHECK_USERNAME":{
                                  "EXIST":["REGISTER:MAKE_REGISTER:REGISTRED:TRUE"],
                                  "NOT_EXIST":["REGISTER:MAKE_REGISTER:REGISTRED:FALSE"]
