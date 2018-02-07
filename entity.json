@@ -1,20 +1,31 @@
 {
-  "entityName":{
-                "entityId":"string",
-                "entityName":"string",
-                "entityValue":"alpha",
-                "entityText":"alpha"
-  
+  "entity":{
+                "entity:id":"string",
+                "entity:value":["entity"],
+               
                },
   "input":{
-                "inputId":"string",
-                "inputName:"string",
-                "inputUser:Id":"string",
-                "inputUser:Name":"string"
-              
-                       
+                "input:id":"string",
+                "input:value":["input"], 
+                "input:token":"string",
+                "input:ip":"string", 
+                "input:user:id":"string",
+                "input:user:name":"string",
+                "input:user:geo:lat":"string",
+                "input:user:geo:long":"string",
+                "input:user:address:street":"string",
+                "input:user:address:num":"number" 
   },
-  
+  "howto:services":{
+                      "services:id":"",
+                      "services:value":["services","track","follow"]
+                      "track:id":"",
+                      "track:value":"",
+                      "track:state":""
+                      "follow:id":"",
+                      "follow:value":"",
+                      "follow:state":"" 
+                   }
 
 
 
