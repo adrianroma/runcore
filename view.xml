@@ -6,9 +6,9 @@
           
   </content:a>
   <footer:a>
-      <options:a></options:a>
-      <options:a></options:a>
-                               
+      <each value="user:default:options" as="option">
+           <options:a>option</options:a>
+      </each>                         
   </footer:a>
 
 </page:a>
