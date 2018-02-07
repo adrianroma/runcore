@@ -11,7 +11,7 @@
          },
          "reactions":{
                "input:actions:close":"close"
-         }
+         },
          "node":{
                  "text:c":{
                            "attributes":{
