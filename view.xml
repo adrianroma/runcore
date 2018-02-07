@@ -1,0 +1,14 @@
+
+ <page:a type="content" onload="start" skin="theme:summer" > 
+   <header:a type="line" >
+          
+   </header:a>
+  <content:a type="grid" >
+
+  </content:a>
+
+</page:a>
+
+
+
+
