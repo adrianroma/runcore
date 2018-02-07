@@ -6,7 +6,7 @@
                },
   "input":{
                 "input:id":"string",
-                "input:value":["input"], 
+                "input:states":["input"], 
                 "input:token":"string",
                 "input:ip":"string", 
                 "input:user:id":"string",
@@ -18,13 +18,16 @@
   },
   "howto:services":{
                       "services:id":"",
-                      "services:value":["services","track","follow"]
-                      "track:id":"",
-                      "track:value":"",
-                      "track:state":""
-                      "follow:id":"",
-                      "follow:value":"",
-                      "follow:state":"" 
+                      "services:states":["services","step"],
+                      "step:id":"",
+                      "step:a:states":["node","forward","return","stop","start"],
+                      "step:a:action":"REGISTER",
+                      "step:a:node:id":"start any",
+                      "step:a:forward":["self:step:b"],
+                      "step:a:return":["self:step:a"],
+                      "step:a:stop":[""],
+                      "step:a:start":[""]
+
                    }
 
 
