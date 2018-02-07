@@ -1,8 +1,8 @@
 {
   "entity":{
                 "entity:id":"string",
-                "entity:states":["entity"]
-                "entity:value":["INITIALIZE a=1,b2"],
+                "entity:states":["entity"],
+                "entity:value":["INITIALIZE a=1 AT SELECT product FROM store:a:product WHERE id=a"],
                
                },
   "input":{
