@@ -1,11 +1,15 @@
 
- <page:a type="content" onload="start" skin="theme:summer" > 
-   <header:a type="line" >
+ <page:a type="content" onload="event:default:load" skin="theme:summer" > 
+   <header:a type="line" size="full" import="node:start:header" />
+  
+  <content:a type="grid" size="full" >
           
-   </header:a>
-  <content:a type="grid" >
-
   </content:a>
+  <footer:a>
+      <options:a></options:a>
+      <options:a></options:a>
+                               
+  </footer:a>
 
 </page:a>
 
