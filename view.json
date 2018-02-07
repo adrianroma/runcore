@@ -6,7 +6,7 @@
                       "size":"big"
                       },
          "actions":{
-               "in":"go"
+               "in":"go",
                "out":"review"
          },
          "reactions":{
