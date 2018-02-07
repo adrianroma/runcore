@@ -1,6 +1,6 @@
 
  <page:a type="content" onload="event:default:load" skin="theme:summer" > 
-   <header:a type="line" size="full" import="node:start:header" />
+   <header:a type="line" size="full" import="url:header:self" />
   
   <content:a type="grid" size="full" >
           
