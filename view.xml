@@ -4,6 +4,12 @@
   
   <content:a type="grid" size="full" >
           
+          <if value="input:user:location" equal="mexico"  > 
+           <text:a>user:default:message</text:a>
+          </if> 
+   
+          
+            
   </content:a>
   <footer:a>
       <each value="user:default:options" as="option">
