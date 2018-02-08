@@ -15,16 +15,16 @@
                                  "NOT":["REGISTER:CHECK_SESSION:YES==FALSE"]
                                },
                 "CHECK_USERNAME":{
-                                 "EXIST":["REGISTER:MAKE_REGISTER:REGISTRED:TRUE"],
-                                 "NOT_EXIST":["REGISTER:MAKE_REGISTER:REGISTRED:FALSE"]
+                                 "EXIST":["REGISTER:MAKE_REGISTER:REGISTRED==TRUE"],
+                                 "NOT_EXIST":["REGISTER:MAKE_REGISTER:REGISTRED==FALSE"]
                                },
                 "MAKE_REGISTER":{
-                                 "NOT_REGISTRED":["REGISTER:MAKE_REGISTER:REGISTRED:FALSE"],
+                                 "NOT_REGISTRED":["REGISTER:MAKE_REGISTER:REGISTRED=FALSE"],
                                  "REGISTRED":["SELECT name FROM user:client WHERE name=input:user:name"],
                                  "NECESARY_FIELDS":["CHECK input:user REQUIRED"],
                                  "REGISTER":[
-                                           "REGISTER:MAKE_REISTER:REGISTRED:FALSE",
-                                           "REGISTER:MAKE_REGISTER:NECESARY_FIELDS:FALSE",
+                                           "REGISTER:MAKE_REISTER:REGISTRED==FALSE",
+                                           "REGISTER:MAKE_REGISTER:NECESARY_FIELDS==FALSE",
                                            "PUSH input:user INTO system:user",
                                            "LOGIN:LOG:SUCCESSFUL=input:user"
                                            ]
