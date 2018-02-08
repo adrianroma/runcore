@@ -1,6 +1,10 @@
 
  <page:a type="content" onload="event:default:load" skin="theme:summer" > 
-   <header:a type="line" size="full" import="url:header:self" />
+   <header:a type="line" size="full" >
+      <import:a  from="http://url.com/header" action="GET" parameters="" />
+      <menu:a >
+      </menu:a> 
+   </header:a> 
   
   <content:a type="grid" size="full" >
           
@@ -12,7 +16,7 @@
             
   </content:a>
   <footer:a>
-      <each:a value="user:default:options" as="option">
+      <each:a from="product:profile" as="option" >
            <options:a>option</options:a>
       </each:a>
    
@@ -21,7 +25,8 @@
         </else:a>
    
   </footer:a>
-
+  <code type="javascript" motor="" storageObject="http://machine.io/meObjects" >
+  </code>
 </page:a>
 
 
