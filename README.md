@@ -1,4 +1,4 @@
-# rm
+# rnCore
 Framework for RM, keys for this work: 
 1.- Multi Language
 2.- Flexible Layer
