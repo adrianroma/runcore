@@ -1,0 +1,51 @@
+{
+"tree":{
+        "node:1A":{
+                    "node:1B":{
+                              node:1X:"value"
+                          }
+                 },
+        "node:2A":{
+                    "node:2B":{
+                                   
+                              } 
+                   }        
+
+       },
+ "list":{
+       "node:1A":"value",
+       "node:2A":"value",
+       "node:nA":"value"
+ },
+ "grid":[
+       {"node:1A":"value","node:1B":"value"},
+       {"node:2A":"value","node:2B":"value"},
+       {"node:nA":"value","node:nB":"value"}
+ 
+        ],
+ "stair":{
+      "node:1A":{
+                  "node:2A":{
+                            "node:3A":"value",
+                  },
+                  "node:2B":{
+                            "node:3C":"value"
+                  }
+      
+               },
+       "node:1B":{
+       
+            
+       }        
+ 
+ 
+ },
+ "meta":{
+            "node:1A":["node:2A","value","node:nA"],
+            "node:2B":["node:3B","value","node:nB"]
+              
+ 
+ }
+ 
+
+}
