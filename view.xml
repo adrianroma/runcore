@@ -4,17 +4,22 @@
   
   <content:a type="grid" size="full" >
           
-          <if value="input:user:location" equal="mexico"  > 
+          <if:a value="input:user:location" equal="mexico"  > 
            <text:a>user:default:message</text:a>
-          </if> 
+          </if:a> 
    
           
             
   </content:a>
   <footer:a>
-      <each value="user:default:options" as="option">
+      <each:a value="user:default:options" as="option">
            <options:a>option</options:a>
-      </each>                         
+      </each:a>
+   
+        <else:a>
+            <text:b>user:mexico:message</text:b>
+        </else:a>
+   
   </footer:a>
 
 </page:a>
