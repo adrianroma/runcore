@@ -1,0 +1,41 @@
+
+ <page format="start" onload="STORE:USER:PARAMERS:START" skin="STORE:USER:SKIN:TODAY" > 
+   <heade type="line" size="full" >
+      <import  from="http://url.com/header" action="BROWSER:SYSTEM:HTML:META" parameters="INPUT:REGION:GEO" />
+      <menu icon="" size="" text="">
+         <each in="STORE:USER:OPTIONS" as="OPT">
+               <option goto="OPT:GOTO">OPT:NAME</option>
+         </each>
+              
+      </menu> 
+      <quick>
+            
+      <quick> 
+   </heade> 
+  
+  <content type="grid" size="full">
+          
+        
+          <section>
+             <each in="STORE:SERVICES:" parameters="IN:STORE:ID,IN:LATEST:SERVICES" >
+             <card image="" size="" text="" ></card>
+             </each> 
+          <section> 
+          
+            
+  </content>
+  <footer>
+      <each from="product:profile" as="option" >
+           <options:a>option</options:a>
+      </each>
+   
+     
+   
+  </footer>
+  <code type="javascript" motor="" storageObject="http://machine.io/meObjects" >
+  </code>
+</page>
+
+
+
+
