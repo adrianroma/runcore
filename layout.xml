@@ -6,6 +6,9 @@
          <each in="STORE:USER:OPTIONS" as="OPT">
                <option goto="OPT:GOTO">OPT:NAME</option>
          </each>
+           <if >
+              <option goto="PAGE:REGISTER" >OUT:PAGE:REGISTER:TEXT</option>
+           </if>
               
       </menu> 
       <quick>
@@ -26,7 +29,7 @@
   </content>
   <footer>
       <each from="product:profile" as="option" >
-           <options:a>option</options:a>
+           <options goto="OPT:GOTO">option</options>
       </each>
    
      
