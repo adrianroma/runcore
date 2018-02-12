@@ -1,5 +1,5 @@
 
- <page format="start" onload="STORE:SET:START" skin="STORE:SET:SKIN" > 
+ <page format="start" onload="STORE:START:LOAD" skin="STORE:SKIN" > 
    <heade type="line" size="full" >
       <import  from="URL:IMPORT:BLOCK" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
       <menu icon="" size="" text="">
@@ -7,7 +7,7 @@
                <option goto="OPT:GOTO">OPT:NAME</option>
          </each>
            <if >
-              <option goto="PAGE:REGISTER:VIEW" >OUT:PAGE:REGISTER:TEXT</option>
+              <option goto="STORE:REGISTER:ADDRESS" >OUT:STORE:REGISTER:TEXT</option>
            </if>
               
       </menu> 
