@@ -1,13 +1,13 @@
 
  <page format="start" onload="STORE:START:LOAD" skin="STORE:SKIN" > 
    <heade type="line" size="full" >
-      <import  from="URL:IMPORT:BLOCK" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
+      <import  from="URI:IMPORT:BLOCK" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
       <menu icon="" size="" text="">
          <each in="USER:OPTIONS" as="OPT">
-               <option goto="OPT:GOTO">OPT:NAME</option>
+               <option goto="OPT:URI">OPT:NAME</option>
          </each>
            <if >
-              <option goto="STORE:REGISTER:ADDRESS" >OUT:STORE:REGISTER:TEXT</option>
+              <option goto="STORE:REGISTER:URI" >STORE:REGISTER:TEXT</option>
            </if>
               
       </menu> 
@@ -20,22 +20,22 @@
           
         
           <section>
-             <each in="STORE:SERVICES:" parameters="IN:STORE:ID,IN:LATEST:SERVICES" >
-             <card image="" size="" text="" ></card>
+             <each in="USER:SERVICES:" as="SERVICE" >
+             <card image="SERVICE:IMAGE:URI" size="SERVICE:IMAGE:SIZE" text="SERVICE:TEXT" ></card>
              </each> 
           <section> 
           
             
   </content>
   <footer>
-      <each from="product:profile" as="option" >
-           <options goto="OPT:GOTO">option</options>
+      <each from="USER:SUBOPTIONS" as="SUB" >
+           <options goto="SUB:URI">SUB:NAME</options>
       </each>
    
      
    
   </footer>
-  <code type="javascript" motor="" storageObject="http://machine.io/meObjects" >
+  <code type="STORE:LANGUAGE:JAVASCRIPT" motor="URI:MOTOR:DECODE" parameters="INPUT:STATUS"  storage="URI:STORAGE:DECODE" >
   </code>
 </page>
 
