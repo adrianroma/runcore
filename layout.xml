@@ -1,12 +1,12 @@
 
- <page type="INPUT:TYPE" onload="STORE:START:LOAD" skin="STORE:SKIN" > 
+ <page type="INPUT:TYPE" onload="STORE:START:LOAD==TRUE" skin="STORE:SKIN" > 
    <heade type="line" size="full" >
       <import  from="URI:IMPORT:BLOCK" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
       <menu icon="" size="" text="">
          <each in="USER:OPTIONS" as="OPT">
                <option goto="OPT:URI">OPT:NAME</option>
          </each>
-           <if >
+           <if value=REGISTER:USER:CHECKNAME"" is="FALSE" >
               <option goto="STORE:REGISTER:URI" >STORE:REGISTER:TEXT</option>
            </if>
               
@@ -25,6 +25,8 @@
              </each> 
           <section> 
            <section type="center">
+             <search query="STORE:SEARCH:LIKE" KEYWORD="INPUT:SEARCH:SERVICES,INPUT:SEARCH:PRODUCTS,INPUT:SEARCH:PLACE,IN:LANGUAGE,IN:REGION" >
+             </search>
            </section> 
           
             
