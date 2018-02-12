@@ -1,5 +1,5 @@
 
- <page format="start" onload="STORE:START:LOAD" skin="STORE:SKIN" > 
+ <page type="INPUT:TYPE" onload="STORE:START:LOAD" skin="STORE:SKIN" > 
    <heade type="line" size="full" >
       <import  from="URI:IMPORT:BLOCK" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
       <menu icon="" size="" text="">
@@ -19,11 +19,13 @@
   <content type="grid" size="full">
           
         
-          <section>
+          <section type="top">
              <each in="USER:SERVICES:" as="SERVICE" >
              <card image="SERVICE:IMAGE:URI" size="SERVICE:IMAGE:SIZE" text="SERVICE:TEXT" ></card>
              </each> 
           <section> 
+           <section type="center">
+           </section> 
           
             
   </content>
@@ -35,7 +37,7 @@
      
    
   </footer>
-  <code type="STORE:LANGUAGE:JAVASCRIPT" motor="URI:MOTOR:DECODE" parameters="INPUT:STATUS"  storage="URI:STORAGE:DECODE" >
+  <code type="RUN:CODE:JAVASCRIPT" motor="URI:JAVASCRIPT:DECODE" parameters="INPUT:STATUS"  storage="STORAGE:URI:DECODE" >
   </code>
 </page>
 
