@@ -1,7 +1,7 @@
 
- <page format="start" onload="STORE:USER:PARAMERS:START" skin="STORE:USER:SKIN:TODAY" > 
+ <page format="start" onload="STORE:SET:START" skin="STORE:SET:SKIN" > 
    <heade type="line" size="full" >
-      <import  from="http://url.com/header" action="BROWSER:SYSTEM:HTML:META" parameters="INPUT:REGION:GEO" />
+      <import  from="URL:DELIVERITY" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
       <menu icon="" size="" text="">
          <each in="STORE:USER:OPTIONS" as="OPT">
                <option goto="OPT:GOTO">OPT:NAME</option>
