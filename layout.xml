@@ -1,13 +1,13 @@
 
  <page format="start" onload="STORE:SET:START" skin="STORE:SET:SKIN" > 
    <heade type="line" size="full" >
-      <import  from="URL:DELIVERITY" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
+      <import  from="URL:IMPORT:BLOCK" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
       <menu icon="" size="" text="">
-         <each in="STORE:USER:OPTIONS" as="OPT">
+         <each in="USER:OPTIONS" as="OPT">
                <option goto="OPT:GOTO">OPT:NAME</option>
          </each>
            <if >
-              <option goto="PAGE:REGISTER" >OUT:PAGE:REGISTER:TEXT</option>
+              <option goto="PAGE:REGISTER:VIEW" >OUT:PAGE:REGISTER:TEXT</option>
            </if>
               
       </menu> 
