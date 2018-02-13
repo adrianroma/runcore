@@ -60,7 +60,7 @@
           "UPGRADE":""
   },
  "DASHBOARD":{
-          "ID":""
+          "ID":"",
           "ADD_CARD":"",
           "BROWSE":"",
           "REMOVE_CARD":"",
@@ -68,7 +68,7 @@
           "OWNER":""
  },
  "CARD":{
-          "ID":""  
+          "ID":"",  
           "CREATE":"",
           "EDIT":"",
           "DELETE":"",
