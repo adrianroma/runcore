@@ -183,7 +183,14 @@
            "PERMISSION":"",
            "HISTORY":"",
            "STATE":"",
- }     
+ },
+"FILE":{
+      "UPLOAD":"",
+      "DOWNLOAD":""
+     
+},
+ "INTO":{},
+ "RELATED":{}     
      
 }
 
