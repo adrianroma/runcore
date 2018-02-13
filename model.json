@@ -1,9 +1,9 @@
 {
    "MODEL":{
              "TASK_A":{
-                     "STATE:A":["TASK_A:STATE_A==VALUE","TASK_C:STATE_C=VALUE","QUERY TO ENTITY B"],
-                     "STATE:B":["QUERY TO ENTITY X"],
-                     "STATE:C":["TASK_X:STATE_Z"]
+                     "STATE:A":["VALUE==TASK_A:STATE_A","VALUE==TASK_C:STATE_C","VALUE==QUERY TO ENTITY B"],
+                     "STATE:B":["VALUE==QUERY TO ENTITY X"],
+                     "STATE:C":["VALUE==TASK_X:STATE_Z"]
                     }
    
    }  ,
@@ -11,22 +11,22 @@
               
       
                 "CHECK_SESSION":{ 
-                                 "YES":"SESSION:STATE",
-                                 "NOT":["REGISTER:CHECK_SESSION:YES==FALSE"]
+                                 "YES":"TRUE==SESSION:STATE",
+                                 "NOT":["FALSE==REGISTER:CHECK_SESSION:YES"]
                                },
                 "CHECK_USERNAME":{
-                                 "EXIST":["REGISTER:MAKE_REGISTER:REGISTRED==TRUE"],
-                                 "NOT_EXIST":["REGISTER:MAKE_REGISTER:REGISTRED==FALSE"]
+                                 "EXIST":["TRUE==REGISTER:MAKE_REGISTER:REGISTRED"],
+                                 "NOT_EXIST":["FALSE==REGISTER:MAKE_REGISTER:REGISTRED"]
                                },
                 "MAKE_REGISTER":{
-                                 "NOT_REGISTRED":["REGISTER:MAKE_REGISTER:REGISTRED=FALSE"],
-                                 "REGISTRED":["SELECT name FROM user:client WHERE name=input:user:name"],
-                                 "NECESARY_FIELDS":["CHECK input:user REQUIRED"],
+                                 "NOT_REGISTRED":["FALSE==REGISTER:MAKE_REGISTER:REGISTRED"],
+                                 "REGISTRED":["STRING==SELECT name FROM user:client WHERE name=input:user:name"],
+                                 "NECESARY_FIELDS":["FALSE==CHECK input:user REQUIRED"],
                                  "REGISTER":[
-                                           "REGISTER:MAKE_REISTER:REGISTRED==FALSE",
-                                           "REGISTER:MAKE_REGISTER:NECESARY_FIELDS==FALSE",
-                                           "PUSH input:user INTO system:user",
-                                           "LOGIN:LOG:SUCCESSFUL=input:user"
+                                           "FALSE==REGISTER:MAKE_REISTER:REGISTRED",
+                                           "FALSE==REGISTER:MAKE_REGISTER:NECESARY_FIELDS",
+                                           "TRUE==PUSH input:user INTO system:user",
+                                           "TRUE==LOGIN:LOG:SUCCESSFUL=input:user"
                                            ]
                                  
                 
