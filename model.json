@@ -11,7 +11,7 @@
               
       
                 "CHECK_SESSION":{ 
-                                 "YES":"TRUE==SESSION:STATE",
+                                 "YES":["TRUE==SESSION:STATE"],
                                  "NOT":["FALSE==REGISTER:CHECK_SESSION:YES"]
                                },
                 "CHECK_USERNAME":{
@@ -26,11 +26,58 @@
                                            "FALSE==REGISTER:MAKE_REISTER:REGISTRED",
                                            "FALSE==REGISTER:MAKE_REGISTER:NECESARY_FIELDS",
                                            "TRUE==PUSH input:user INTO system:user",
-                                           "TRUE==LOGIN:LOG:SUCCESSFUL=input:user"
+                                           "TRUE==LOG:LOGIN:SUCCESSFUL=input:user"
                                            ]
                                  
                 
-                }
+                },
+  "LOG":{
+          "LOGIN":{
+                       "YES":"",
+                       "NOT":"" 
+                        
+                  },
+          "LOGED":{
+                     "YES":"",
+                     "NOT":""
+                  },
+           "LOGOUT":{
+                     "YES":"",
+                     "NOT":""
+                    } 
+   },
+      
+  "ACCOUNT":{
+          "CREATE":"", 
+          "VIEW":"",
+          "CANCELL":""
+          "DELETE":"",
+          "UPDATE":"",
+          "EDIT":"",
+          "UPGRADE":""
+  },
+ "DASHBOARD":{
+          "ADD_CARD":"",
+          "BROWSE":"",
+          "REMOVE_CARD":""
+          "FILTER":"",
+          "OWNER":""
+ },
+ "CARD":{
+          "CREATE":"",
+          "EDIT":"",
+          "DELETE":"",
+          "OWNER":"",
+          "ADDT_AG":"",
+          "REMOVE_TAG":"",
+          "GET_TAG":"",
+          "WAY":""
+ },
+ "TAG":{
+          
+ 
+ }     
+      
 
 }
 
