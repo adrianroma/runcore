@@ -48,22 +48,27 @@
    },
       
   "ACCOUNT":{
+          "ID":"",
           "CREATE":"", 
           "VIEW":"",
-          "CANCELL":""
+          "TYPE":"",
+          "SEARCH":""
+          "CANCELL":"",
           "DELETE":"",
           "UPDATE":"",
           "EDIT":"",
           "UPGRADE":""
   },
  "DASHBOARD":{
+          "ID":""
           "ADD_CARD":"",
           "BROWSE":"",
-          "REMOVE_CARD":""
+          "REMOVE_CARD":"",
           "FILTER":"",
           "OWNER":""
  },
  "CARD":{
+          "ID":""  
           "CREATE":"",
           "EDIT":"",
           "DELETE":"",
@@ -74,10 +79,95 @@
           "WAY":""
  },
  "TAG":{
-          
+         "ID":"",
+         "CREATE":"",
+         "EDIT":"",
+         "DELETE":""
+         "TYPE":""
+         "CATEGORY":"" 
+ },
+ "IMAGE":{
+         
+ },
+ "TITLE":{
+ 
+ },
+ "OWNER":{
+ 
+ },
+ "WAY":{
  
  }     
-      
-
+ "DESCRIPTION":{
+ },     
+ "VIDEO":{
+ },
+ "SONG":{
+ },     
+ "MAP":{
+ 
+ },     
+ "ARTICLE":{
+ 
+ },
+ "MESSAGE":{
+ 
+ },
+ "POPUP":{
+ 
+ },     
+ "EMAIL":{
+ 
+ },     
+ "SMS":{
+ 
+ },     
+ ,"COMMENTS":{
+ }, 
+ "REVIEW":{
+ },     
+ "HISTORY":{
+ 
+ },
+ "STORE":{
+ 
+ },
+ "OPTIONS":{
+ 
+ 
+ },     
+ "TRACK":{
+ 
+ },
+ "PRODUCT":{
+ 
+ },
+ "SERVICE":{
+    
+ },        
+ "INSTRUCTION":{
+ 
+ },           
+ "QUOTE":{
+ 
+ },     
+ "PAY":{
+ 
+ 
+ },    
+ "ORDER":{
+ 
+ },     
+ "DOCUMENT":{
+           "ID":"",
+           "VIEW":"",   
+           "CREATE":"",  
+           "TREE":"",
+           "OWNER":"",
+           "TAG":"" 
+           "PERMISSION":"",
+           "HISTORY":""  
+ }     
+     
 }
 
