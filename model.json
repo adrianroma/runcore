@@ -52,7 +52,7 @@
           "CREATE":"", 
           "VIEW":"",
           "TYPE":"",
-          "SEARCH":""
+          "SEARCH":"",
           "CANCELL":"",
           "DELETE":"",
           "UPDATE":"",
@@ -95,9 +95,16 @@
  "OWNER":{
  
  },
+ "REQUIRED":{
+ 
+ },
+ "CHECK":{
+ },
+ "PERMISSION":{
+ },     
  "WAY":{
  
- }     
+ },    
  "DESCRIPTION":{
  },     
  "VIDEO":{
@@ -121,7 +128,7 @@
  },     
  "SMS":{
  
- },     
+ }    
  ,"COMMENTS":{
  }, 
  "REVIEW":{
@@ -164,9 +171,10 @@
            "CREATE":"",  
            "TREE":"",
            "OWNER":"",
-           "TAG":"" 
+           "TAG":"" ,
            "PERMISSION":"",
-           "HISTORY":""  
+           "HISTORY":"",
+           "STATE":"",
  }     
      
 }
