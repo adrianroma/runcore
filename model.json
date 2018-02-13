@@ -93,7 +93,10 @@
  },
  "DIALOG":{
  
- },      
+ }, 
+ "ACTION":{
+      
+ },
  "IMAGE":{
          
  },
@@ -165,6 +168,10 @@
  },           
  "QUOTE":{
  
+ }, 
+ "CALCULATE":{
+       "OPERATE":{},
+       "RESULT":""
  },     
  "PAY":{
  
