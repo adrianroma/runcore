@@ -6,7 +6,7 @@
          <each in="USER:OPTIONS" as="OPT">
                <option goto="OPT:URI">OPT:NAME</option>
          </each>
-           <if value=REGISTER:USER:CHECKNAME"" is="FALSE" >
+           <if value="REGISTER:USER:CHECKNAME" is="FALSE" >
               <option goto="STORE:REGISTER:URI" >STORE:REGISTER:TEXT</option>
            </if>
               
@@ -25,7 +25,7 @@
              </each> 
           <section> 
            <section type="center">
-             <search query="STORE:SEARCH:LIKE==INPUT:SEARCH:PRODUCT" PARAMETES="INPUT:REGION,INPUT:TYPE" >
+             <search query="STORE:SEARCH:LIKE" key="PRODUCT==INPUT:SEARCH:PRODUCT" PARAMETES="INPUT:REGION,INPUT:TYPE" >
              </search>
            </section> 
           
