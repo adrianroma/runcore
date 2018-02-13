@@ -82,10 +82,18 @@
          "ID":"",
          "CREATE":"",
          "EDIT":"",
-         "DELETE":""
-         "TYPE":""
+         "DELETE":"",
+         "TYPE":"",
          "CATEGORY":"" 
  },
+ "TOOLTIP":{
+ },
+ "EDIT":{
+ 
+ },
+ "DIALOG":{
+ 
+ },      
  "IMAGE":{
          
  },
