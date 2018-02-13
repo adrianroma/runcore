@@ -1,17 +1,10 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-
-var express = require('express');
-var app = express.createServer();
-app.get('/', function(req, res) {
-    res.send('Hello World!');
-});
-// Get port from heroku, otherwise use 3000.
-var port = process.env.PORT || 3000;
-app.listen(port, function() {
-    console.log("Listening on " + port);
-});
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/index'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
