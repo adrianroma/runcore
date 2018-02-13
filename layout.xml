@@ -20,12 +20,12 @@
           
         
           <section type="top">
-             <each in="USER:SERVICES:" as="SERVICE" >
+             <each in="USER:SERVICES:" as="SERVICE" size="10" >
              <card image="SERVICE:IMAGE:URI" size="SERVICE:IMAGE:SIZE" text="SERVICE:TEXT" ></card>
              </each> 
           <section> 
            <section type="center">
-             <search query="STORE:SEARCH:LIKE" KEYWORD="INPUT:SEARCH:SERVICES,INPUT:SEARCH:PRODUCTS,INPUT:SEARCH:PLACE,IN:LANGUAGE,IN:REGION" >
+             <search query="STORE:SEARCH:LIKE==INPUT:SEARCH:PRODUCT" PARAMETES="INPUT:REGION,INPUT:TYPE" >
              </search>
            </section> 
           
