@@ -180,30 +180,69 @@
  } 
  ,     
  "TRACK":{
-         "ID":""
+         "ID":"",
          "TYPE":"",
          "START":"",
          "END":"",
          "RECORD":""
  },
  "PRODUCT":{
- 
+         "PICKUP":"",
+         "CREATE":"",
+         "EDIT":"",
+         "UPDATE":"",
+         "DELETE":"",
+         "VIEW":"",
+         "OWNER":"",
+         "TAG":"",
+         "AVAIL":""
  },
  "SERVICE":{
     
  },        
  "INSTRUCTION":{
- 
+        "CREATE":"",
+        "START":"",
+        "STEP":"",
+        "META":"" 
+        "OWNER":"",
+        "STATE":"",
+        "DELETE":"" 
+        
  },           
  "QUOTE":{
- 
+       "OWNER":"",   
+       "ITEMS":"",
+       "DISCOUNT":"",
+       "TAX":"",
+       "DELIVERITY":"",
+       "ARRIVE":"",
+       "HANDLE":"",
+       "SUMARY":""
+       "TOTAL":"",
  }, 
  "CALCULATE":{
-       "OPERATE":{},
+       "FROM":"",
+       "OPERATION":""
        "RESULT":""
  },     
- "PAY":{
- 
+ "PAY":{ 
+        "CANCEL":"",
+        "CONTRACT":"",
+        "HEALTH_OPERATOR":"",
+        "DISPLAY_OPERATORS":"",
+        "PICKUP_OPERATOR":"",
+        "PICKUP_QUOTE":"",
+        "DISPLAY_QUOTES":""
+        "DISPLAY_CUSTOMERS":""
+        "PICKUP_CUSTOMER":"",
+        "DISPLAY_OPERATOR_BILLING":"", 
+        "CHECK_OPERATOR_BILLING":""
+        "PICKUP_TRUST":"",
+        "RISK_SCORE":"",
+        "RESUME":"", 
+        "TRANSFER_DATA":"",
+        "SUCCESSFUL":"" 
  
  },    
  "ORDER":{
