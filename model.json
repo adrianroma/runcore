@@ -92,13 +92,31 @@
  
  },
  "DIALOG":{
- 
+            "ID":"",
+            "STATE:"",
+            "CREATE":"",
+            "DELETE":"",
+            "EDIT":"",
+            "VIEW":"",  
+            "TRIGGER":"",
+            "CONDITIONS":""
  }, 
  "ACTION":{
-      
+            "ID":"",
+            "GOTO":"",
+            "INPUT":"",
+            "OUTPUT":"",
+            "ERROR":"",
+            "REFERENCE":""
  },
  "IMAGE":{
-         
+             "SCR":"",
+             "VIEW":"",
+             "NEW":"",
+             "NAME":"",
+             "DESCRIPTION":"",
+             "OWNER":"",
+             "ID":"" 
  },
  "TITLE":{
  
@@ -154,7 +172,7 @@
  
  
  },    
- "OBSERVER":{
+ "OBSERVE":{
         "ID":"",
         "EVENT":"",
         "CONDITION":"",
@@ -162,7 +180,11 @@
  } 
  ,     
  "TRACK":{
- 
+         "ID":""
+         "TYPE":"",
+         "START":"",
+         "END":"",
+         "RECORD":""
  },
  "PRODUCT":{
  
