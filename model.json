@@ -153,7 +153,14 @@
  "OPTIONS":{
  
  
- },     
+ },    
+ "OBSERVER":{
+        "ID":"",
+        "EVENT":"",
+        "CONDITION":"",
+        "TRIGGER":""
+ } 
+ ,     
  "TRACK":{
  
  },
