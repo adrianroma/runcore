@@ -89,9 +89,23 @@
          "CATEGORY":"" 
  },
  "TOOLTIP":{
+           "OWNER":"",
+           "DISPLAY":"",
+           "TRIGER":"",
+           "VALUE":""
+           "NEW":"",
+           "TRASH":""
  },
  "EDIT":{
- 
+            "PICKUP_ENTITY":"",
+            "IS_EDITABLE":"",
+            "IS_REQUIRED":"", 
+            "DISPLAY":"",
+            "SAVE":"",
+            "CLOSE":"",
+            "VERSION":"",
+            "HISTORY":"",
+            "OWNERS":""
  },
  "DIALOG":{
             "ID":"",
@@ -121,22 +135,67 @@
              "ID":"" 
  },
  "TITLE":{
- 
+            "TEXT":"",
+            "KEYWORDS":"",
+            "RELATED":"",
+            "TAGS":"",
+            "OWNER":""
  },
  "OWNER":{
- 
+          "IDS":"",
+          "TYPE":"" 
+          "PERMISSION":"",
+          "PROPERTY":"",
+          "FROM":"",
+          "UNTIL":"",
+          "HISTORY":"",
+          "DISPLAY":""
+          "EDIT":"",
+          "NEW":""
+          "TRASH":""
  },
  "REQUIRED":{
- 
+           "ENTITY":"" 
+           "ATTRIBUTE":"",
+           "VALUE":"",
+           "PERMISSION":"",
+           "FAIL":"",
+           "OK":""  
+           
  },
  "CHECK":{
+           "ENTITY":""
+            
  },
  "PERMISSION":{
+            "ID":"",
+            "ONWER":"",
+            "EDIT":"", 
+            "FROM":"",
+            "UNTIL":"",
+            "ALLOW_TO":"",
+            "REVOKE":""
+            "DISPLAY":""
+            "TYPE":{
+                   "READ_AND_WRITE":""
+                   "READ_ONLY":""
+                   "HIDDEN":"",
+           
+           "CHECK":{
+                    "INSUFFICIENT":"",
+                    "OK":"",
+                    "NOT_ALLOW":""
+                   } 
  },     
  "WAY":{
  
  },    
  "DESCRIPTION":{
+       "OWNER":"",
+       "KEYWORDS":""
+       "DATE":"",
+       "VERSION":"",
+       "TEXT":""
  },     
  "VIDEO":{
  },
@@ -161,6 +220,7 @@
  
  }    
  ,"COMMENTS":{
+    
  }, 
  "REVIEW":{
  },     
@@ -262,8 +322,17 @@
            "STATE":"",
  },
 "FILE":{
+      "DELETE":"",
+      "EXIST":"",
+      "COPY_TO":"",
+      "RENAME":""
+      "OWNER":"",
+      "VERSION":"",
+      "DATE":"",
       "UPLOAD":"",
-      "DOWNLOAD":""
+      "DOWNLOAD":"",
+      "DISPLAY":"",
+      "EDIT":""
      
 },
  "INTO":{},
