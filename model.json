@@ -44,7 +44,9 @@
            "LOGOUT":{
                      "YES":"",
                      "NOT":""
-                    } 
+                    },
+           "TIMEOUT":{
+           } 
    },
       
   "ACCOUNT":{
