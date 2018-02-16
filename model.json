@@ -92,7 +92,7 @@
            "OWNER":"",
            "DISPLAY":"",
            "TRIGER":"",
-           "VALUE":""
+           "VALUE":"",
            "NEW":"",
            "TRASH":""
  },
@@ -151,7 +151,7 @@
           "HISTORY":"",
           "DISPLAY":""
           "EDIT":"",
-          "NEW":""
+          "NEW":"",
           "TRASH":""
  },
  "REQUIRED":{
@@ -174,11 +174,11 @@
             "FROM":"",
             "UNTIL":"",
             "ALLOW_TO":"",
-            "REVOKE":""
+            "REVOKE":"",
             "DISPLAY":""
             "TYPE":{
                    "READ_AND_WRITE":""
-                   "READ_ONLY":""
+                   "READ_ONLY":"",
                    "HIDDEN":"",
            
            "CHECK":{
@@ -295,11 +295,11 @@
         "DISPLAY_OPERATORS":"",
         "PICKUP_OPERATOR":"",
         "PICKUP_QUOTE":"",
-        "DISPLAY_QUOTES":""
-        "DISPLAY_CUSTOMERS":""
+        "DISPLAY_QUOTES":"",
+        "DISPLAY_CUSTOMERS":"",
         "PICKUP_CUSTOMER":"",
         "DISPLAY_OPERATOR_BILLING":"", 
-        "CHECK_OPERATOR_BILLING":""
+        "CHECK_OPERATOR_BILLING":"",
         "PICKUP_TRUST":"",
         "RISK_SCORE":"",
         "RESUME":"", 
@@ -325,7 +325,7 @@
       "DELETE":"",
       "EXIST":"",
       "COPY_TO":"",
-      "RENAME":""
+      "RENAME":"",
       "OWNER":"",
       "VERSION":"",
       "DATE":"",
