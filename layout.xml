@@ -1,0 +1,48 @@
+
+ <page type="INPUT:TYPE" onload="STORE:START:LOAD==TRUE" skin="STORE:SKIN" > 
+   <heade type="line" size="full" >
+      <import  from="URI:IMPORT:BLOCK" action="HEAD" parameters="INPUT:REGION:GEO,INPUT:TYPE" />
+      <menu icon="" size="" text="">
+         <each in="USER:OPTIONS" as="OPT">
+               <option goto="OPT:URI">OPT:NAME</option>
+         </each>
+           <if value="REGISTER:USER:CHECKNAME" is="FALSE" >
+              <option goto="STORE:REGISTER:URI" >STORE:REGISTER:TEXT</option>
+           </if>
+              
+      </menu> 
+      <quick>
+            
+      <quick> 
+   </heade> 
+  
+  <content type="grid" size="full">
+          
+        
+          <section type="top">
+             <each in="USER:SERVICES:" as="SERVICE" size="10" >
+             <card image="SERVICE:IMAGE:URI" size="SERVICE:IMAGE:SIZE" text="SERVICE:TEXT" ></card>
+             </each> 
+          <section> 
+           <section type="center">
+             <search query="STORE:SEARCH:LIKE" key="PRODUCT==INPUT:SEARCH:PRODUCT" PARAMETES="INPUT:REGION,INPUT:TYPE" >
+             </search>
+           </section> 
+          
+            
+  </content>
+  <footer>
+      <each from="USER:SUBOPTIONS" as="SUB" >
+           <options goto="SUB:URI">SUB:NAME</options>
+      </each>
+   
+     
+   
+  </footer>
+  <code type="RUN:CODE:JAVASCRIPT" motor="URI:JAVASCRIPT:DECODE" parameters="INPUT:STATUS"  storage="STORAGE:URI:DECODE" >
+  </code>
+</page>
+
+
+
+

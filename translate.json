@@ -1,0 +1,28 @@
+{
+   
+  "0":{ 
+   "en:us":"how are you",
+   "es:mx":"¿como estas?",
+   "fr:fr":"comment ça va?",
+   "set":["default"]
+  } ,
+  "1":{
+   "en:us":"home",
+   "es:mx":"casa",
+   "fr:fr":"la maison",
+   "set":["default"]
+  },
+  "2":{
+   "en:us":"task",
+   "es:mx":"tarea",
+   "fr:fr":"tâche",
+   "set":["default"]
+   },
+  "3":{
+   "en:us":"my account",
+   "es:mx":"mi cuenta",
+   "fr:fr":"mon compte",
+   "set":["default"]
+  } 
+
+}

@@ -1,0 +1,384 @@
+{
+	"MODEL": {
+		"TASK_A": {
+			"STATE:A": ["VALUE==TASK_A:STATE_A", "VALUE==TASK_C:STATE_C", "VALUE==QUERY TO ENTITY B"],
+			"STATE:B": ["VALUE==QUERY TO ENTITY X"],
+			"STATE:C": ["VALUE==TASK_X:STATE_Z"]
+		}
+
+	},
+	"REGISTER": {
+
+
+		"CHECK_SESSION": {
+			"YES": ["TRUE==SESSION:STATE"],
+			"NOT": ["FALSE==REGISTER:CHECK_SESSION:YES"]
+		},
+		"CHECK_USERNAME": {
+			"EXIST": ["TRUE==REGISTER:MAKE_REGISTER:REGISTRED"],
+			"NOT_EXIST": ["FALSE==REGISTER:MAKE_REGISTER:REGISTRED"]
+		},
+		"MAKE_REGISTER": {
+			"NOT_REGISTRED": ["FALSE==REGISTER:MAKE_REGISTER:REGISTRED"],
+			"REGISTRED": ["STRING==SELECT name FROM user:client WHERE name=input:user:name"],
+			"NECESARY_FIELDS": ["FALSE==CHECK input:user REQUIRED"],
+			"REGISTER": [
+				"FALSE==REGISTER:MAKE_REISTER:REGISTRED",
+				"FALSE==REGISTER:MAKE_REGISTER:NECESARY_FIELDS",
+				"TRUE==PUSH input:user INTO system:user",
+				"TRUE==LOG:LOGIN:SUCCESSFUL=input:user"
+			]
+
+
+		},
+		"LOG": {
+			"LOGIN": {
+				"YES": "",
+				"NOT": ""
+
+			},
+			"LOGED": {
+				"YES": "",
+				"NOT": ""
+			},
+			"LOGOUT": {
+				"YES": "",
+				"NOT": ""
+			},
+			"TIMEOUT": {
+             "YES":"",
+             "NOT":"",
+             "DELAY":""
+           }
+		},
+
+		"ACCOUNT": {
+			"ID": "",
+			"CREATE": "",
+			"VIEW": "",
+			"TYPE": "",
+			"SEARCH": "",
+			"CANCELL": "",
+			"DELETE": "",
+			"UPDATE": "",
+			"EDIT": "",
+			"UPGRADE": ""
+		},
+		"DASHBOARD": {
+			"ID": "",
+			"ADD_CARD": "",
+			"BROWSE": "",
+			"REMOVE_CARD": "",
+			"FILTER": "",
+			"OWNER": ""
+		},
+		"CARD": {
+			"ID": "",
+			"CREATE": "",
+			"EDIT": "",
+			"DELETE": "",
+			"OWNER": "",
+			"ADDT_AG": "",
+			"REMOVE_TAG": "",
+			"GET_TAG": "",
+			"WAY": ""
+		},
+		"TAG": {
+			"ID": "",
+			"CREATE": "",
+			"EDIT": "",
+			"DELETE": "",
+			"TYPE": "",
+			"CATEGORY": ""
+		},
+		"TOOLTIP": {
+			"OWNER": "",
+			"DISPLAY": "",
+			"TRIGER": "",
+			"VALUE": "",
+			"NEW": "",
+			"TRASH": ""
+		},
+		"EDIT": {
+			"PICKUP_ENTITY": "",
+			"IS_EDITABLE": "",
+			"IS_REQUIRED": "",
+			"DISPLAY": "",
+			"SAVE": "",
+			"CLOSE": "",
+			"VERSION": "",
+			"HISTORY": "",
+			"OWNERS": ""
+		},
+		"DIALOG": {
+			"ID": "",
+			"STATE": "",
+			"CREATE": "",
+			"DELETE": "",
+			"EDIT": "",
+			"VIEW": "",
+			"TRIGGER": "",
+			"CONDITIONS": ""
+		},
+		"ACTION": {
+			"ID": "",
+			"GOTO": "",
+			"INPUT": "",
+			"OUTPUT": "",
+			"ERROR": "",
+			"REFERENCE": ""
+		},
+		"IMAGE": {
+			"SCR": "",
+			"VIEW": "",
+			"NEW": "",
+			"NAME": "",
+			"DESCRIPTION": "",
+			"OWNER": "",
+			"ID": ""
+		},
+		"TITLE": {
+			"TEXT": "",
+			"KEYWORDS": "",
+			"RELATED": "",
+			"TAGS": "",
+			"OWNER": ""
+		},
+		"OWNER": {
+			"IDS": "",
+			"TYPE": "",
+			"PERMISSION": "",
+			"PROPERTY": "",
+			"FROM": "",
+			"UNTIL": "",
+			"HISTORY": "",
+			"DISPLAY": "",
+			"EDIT": "",
+			"NEW": "",
+			"TRASH": ""
+		},
+		"REQUIRED": {
+			"ENTITY": "",
+			"ATTRIBUTE": "",
+			"VALUE": "",
+			"PERMISSION": "",
+			"FAIL": "",
+			"OK": ""
+
+		},
+		"CHECK": {
+			"ENTITY": ""
+
+		},
+		"PERMISSION": {
+			"ID": "",
+			"ONWER": "",
+			"EDIT": "",
+			"FROM": "",
+			"UNTIL": "",
+			"ALLOW_TO": "",
+			"REVOKE": "",
+			"DISPLAY": "",
+			"TYPE": {
+				"READ_AND_WRITE": "",
+				"READ_ONLY": "",
+				"HIDDEN": "",
+
+				"CHECK": {
+					"INSUFFICIENT": "",
+					"OK": "",
+					"NOT_ALLOW": ""
+				}
+			},
+			"WAY": {
+             "TRIGER":"",
+             "FROM":"",
+             "TO":"",
+             "STOP":""
+			},
+			"DESCRIPTION": {
+				"OWNER": "",
+				"KEYWORDS": "",
+				"DATE": "",
+				"VERSION": "",
+				"TEXT": ""
+			},
+			"VIDEO": {},
+			"SONG": {},
+			"MAP": {
+
+			},
+			"ARTICLE": {
+            "ID":"",
+            "OWNER":"",
+            "AUTHOR":"",
+            "KEYWORD":"",
+            "EDIT":"",
+            "CREATE":"",
+            "DELETE":"",
+            "SHOW":"",
+            "HISTORY":"",
+            "VERSION":"",
+            "DATE":""
+			},
+			"MESSAGE": {
+
+			},
+			"POPUP": {
+
+			},
+			"EMAIL": {
+              "ID":"",
+              "OWNER":"",
+              "SUBJECT":"",
+              "TO":"",
+              "FROM":"",
+              "COMPOSE":"",
+              "VIEW":"",
+              "HEALTH":"",
+              "SERVER":"",
+              "SEND":"",
+              "FAIL":""
+			},
+			"SMS": {
+
+			},
+			"COMMENTS": {
+
+			},
+			"REVIEW": {
+         
+         },
+			"HISTORY": {
+
+			},
+			"STORE": {
+
+			},
+			"OPTIONS": {
+             "ID":"",
+             "OWNER":"",
+             "TYPE":"",
+             "SHOW":"",
+             "CREATE":"",
+             "EDIT":"",
+             "DELETE":"",
+             "LIST":""
+              
+
+			},
+			"OBSERVE": {
+				"ID": "",
+				"EVENT": "",
+				"CONDITION": "",
+				"TRIGGER": ""
+			},
+			"TRACK": {
+				"ID": "",
+				"TYPE": "",
+				"START": "",
+				"END": "",
+				"RECORD": ""
+			},
+			"PRODUCT": {
+				"PICKUP": "",
+				"CREATE": "",
+				"EDIT": "",
+				"UPDATE": "",
+				"DELETE": "",
+				"VIEW": "",
+            "QUICK":"",
+				"OWNER": "",
+				"TAG": "",
+				"AVAIL": ""
+			},
+			"SERVICE": {
+              "CHOICE":"",
+              "CREATE":"",
+              "EDIT":"",
+               "UPDATE": "",
+				   "DELETE": "",
+               "QUICK":"",
+				   "VIEW": "",
+				   "OWNER": "",
+				   "TAG": "",
+               "REGISTRED":"",
+               "SCHEDULE":"",
+				   "AVAIL": ""
+			},
+			"INSTRUCTION": {
+				"CREATE": "",
+				"START": "",
+				"STEP": "",
+				"META": "",
+				"OWNER": "",
+				"STATE": "",
+				"DELETE": ""
+
+			},
+			"QUOTE": {
+				"OWNER": "",
+				"ITEMS": "",
+				"DISCOUNT": "",
+				"TAX": "",
+				"DELIVERITY": "",
+				"ARRIVE": "",
+				"HANDLE": "",
+				"SUMARY": "",
+				"TOTAL": ""
+			},
+			"CALCULATE": {
+				"FROM": "",
+				"OPERATION": "",
+				"RESULT": ""
+			},
+			"PAY": {
+				"CANCEL": "",
+				"CONTRACT": "",
+				"HEALTH_OPERATOR": "",
+				"DISPLAY_OPERATORS": "",
+				"PICKUP_OPERATOR": "",
+				"PICKUP_QUOTE": "",
+				"DISPLAY_QUOTES": "",
+				"DISPLAY_CUSTOMERS": "",
+				"PICKUP_CUSTOMER": "",
+				"DISPLAY_OPERATOR_BILLING": "",
+				"CHECK_OPERATOR_BILLING": "",
+				"PICKUP_TRUST": "",
+				"RISK_SCORE": "",
+				"RESUME": "",
+				"TRANSFER_DATA": "",
+				"SUCCESSFUL": ""
+
+			},
+			"ORDER": {
+
+			},
+			"DOCUMENT": {
+				"ID": "",
+				"VIEW": "",
+				"CREATE": "",
+				"TREE": "",
+				"OWNER": "",
+				"TAG": "",
+				"PERMISSION": "",
+				"HISTORY": "",
+				"STATE": ""
+			},
+			"FILE": {
+				"DELETE": "",
+				"EXIST": "",
+				"COPY_TO": "",
+				"RENAME": "",
+				"OWNER": "",
+				"VERSION": "",
+				"DATE": "",
+				"UPLOAD": "",
+				"DOWNLOAD": "",
+				"DISPLAY": "",
+				"EDIT": ""
+
+			}
+		}
+	}
+}
