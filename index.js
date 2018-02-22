@@ -1,10 +1,21 @@
-const express = require('express')
-const path = require('path')
-const PORT = process.env.PORT || 5000
+// Dependencies
+const express = require('express');
+const path = require('path');
 
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+// App Instance
+const app = express();
+
+// Enviroment Variables
+const PORT = process.env.PORT || 5000;
+const isDevelopment = process.env.NODE_ENV !== 'production';
+
+// Static Folder
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Send All Trafic to React
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.hmtl'));
+});
+
+// Listen Port
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
