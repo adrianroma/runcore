@@ -1,37 +1,64 @@
 {
-  "entity":{
-                "entity:id":"string",
-                "entity:states":["entity"],
-                "entity:value":["INITIALIZE a=1 AT SELECT product FROM store:a:product WHERE id=a"],
+  "name":[
+              "name:user:id",
+              "name:user:name",
+              "name:user:names",
+              "name:user:secondname",
+              "name:user:finalname"
+      
+  ],
+
+ "email":[
+             "email:user:id",
+             "email:user:server",
+             "email:user:user",
+             "email:user:mails:email"
+
+     
+ ],
+ 
+ "address":[
+               "address:user:id",
+               "address:user:type",
+               "address:user:street",
+               "address:user:number",
+               "address:user:neighborhood",
+               "address:user:city",
+               "address:user:pbox",
+               "address:user:county",
+               "address:user:state",
+               "address:user:region",
+               "address:user:country"
                
-               },
-  "input":{
-                "input:id":"string",
-                "input:states":["input"], 
-                "input:token":"string",
-                "input:user:states":["ip","name","geo","address"],
-                "input:user:ip":"",
-                "input:user:id":"string",
-                "input:user:name":"string",
-                "input:user:geo:lat":"string",
-                "input:user:geo:long":"string",
-                "input:user:address:street":"string",
-                "input:user:address:num":"number" 
-  },
-  "howto:services":{
-                      "services:id":"",
-                      "services:states":["services","step"],
-                      "step:id":"",
-                      "step:a:states":["node","forward","return","stop","start"],
-                      "step:a:value":"INITIALIZE x=3 AT SELECT * FROM users WHERE rate=x",
-                      "step:a:node:id":"start any",
-                      "step:a:forward":["self:step:b"],
-                      "step:a:return":["self:step:a"],
-                      "step:a:stop":[""],
-                      "step:a:start":[""]
-
-                   }
-
-
-
+ ],
+ "history":[],
+ "payment":[],
+ "dashboard":[],
+ "messages":[
+     
+ ],
+ "links":[
+                "links:user:id",
+                "links:user:reference",
+                "links:user:friends",
+                "links:user:contacts",
+                "links:user:clients",
+                "links:user:articles",
+                "links:user:products",
+                "links:user:services"
+ ],
+  "user":[      
+                "user:store",
+                "user:store:id",
+                "user:store:history:id",
+                "user:store:name:id",
+                "user:store:email:id",
+                "user:store:address:id",
+                "user:store:payment:id",
+                "user:store:dashboard:id",
+                "user:store:messages:id",
+                "user:store:links:id"
+  ]         
+               
+               
 }

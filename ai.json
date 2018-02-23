@@ -15,7 +15,7 @@
  "list":{
        "node:1A":"value",
        "node:2A":"value.repeat.5",
-       "node:nA":"value",
+       "node:nA":"value"
          
  },
  "grid":[
@@ -27,7 +27,7 @@
  "stair":{
       "node:1A":{
                   "node:2A":{
-                            "node:3A":"value",
+                            "node:3A":"value"
                   },
                   "node:2B":{
                             "node:3C":"value"
