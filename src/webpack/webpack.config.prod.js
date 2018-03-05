@@ -9,10 +9,10 @@ const css = new ExtractTextWebpackPlugin('css/material.css');
 
 module.exports = {
 	entry: [
-		path.join(__dirname, './src/index')
+		path.join(__dirname, '../app')
 	],
 	output: {
-		path: path.join(__dirname, './dist'),
+		path: path.join(__dirname, 'dist'),
 		filename: '[name].bundle.js',
 		publicPath: '/'
 	},
@@ -40,7 +40,7 @@ module.exports = {
 	plugins: [
 		css,
 		new HTMLWebpackPlugin({
-			template: 'src/utils/templates/prod.html'
+			template: '../utils/templates/production.html'
 		}),
 		new webpack.optimize.UglifyJsPlugin({
 			compressor: {

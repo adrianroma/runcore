@@ -7,7 +7,7 @@ module.exports = {
 	devtool: 'eval-source-map',
 	entry: [
 		'webpack-hot-middleware/client',
-		path.join(__dirname, 'src/index')
+		path.join(__dirname, '../app')
 	],
 	output: {
 		path: path.join(__dirname, 'dist'),
@@ -15,7 +15,7 @@ module.exports = {
 		publicPath: '/'
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
@@ -37,7 +37,7 @@ module.exports = {
 	},
 	plugins: [
 		new HTMLWebpackPlugin({
-			template: 'src/utils/templates/dev.html'
+			template: '../utils/templates/development.html'
 		}),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoEmitOnErrorsPlugin(),
