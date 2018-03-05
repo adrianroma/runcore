@@ -1,6 +1,6 @@
 {
   "name": "runcore_front-end_app",
-  "version": "0.3.0",
+  "version": "1.0",
   "description": "Core font-end",
   "engines": {
     "node": "8.9.1"
@@ -57,10 +57,5 @@
     "type": "git",
     "url": "https://github.com/AlexisNava/runcore"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
   "license": "MIT"
 }
