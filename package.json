@@ -16,7 +16,8 @@
     "prepush": "npm run test",
     "production": "npm run clean && BABEL_ENV=production webpack --config webpack.config.prod.js --colors --display-modules && NODE_ENV=production node src/server",
     "start": "npm run development && NODE_ENV=development node src/server",
-    "test": "echo \"Error: no test specified\" && exit 1"  },
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "express": "^4.15.2",
     "material-ui": "^1.0.0-beta.35",
@@ -37,6 +38,7 @@
     "babel-register": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "css-loader": "^0.28.10",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
