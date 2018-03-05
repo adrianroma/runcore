@@ -7,8 +7,16 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
-  },
+    "clean": "rimraf dist/",
+    "development": "npm run clean && BABEL_ENV=development webpack --config webpack.config.dev.js --colors --display-modules",
+    "lint": "eslint src",
+    "postmerge": "npm install",
+    "postwrite": "npm install",
+    "precommit": "npm run lint",
+    "prepush": "npm run test",
+    "production": "npm run clean && BABEL_ENV=production webpack --config webpack.config.prod.js --colors --display-modules && NODE_ENV=production node src/server",
+    "start": "npm run development && NODE_ENV=development node src/server",
+    "test": "echo \"Error: no test specified\" && exit 1"  },
   "dependencies": {
     "express": "^4.15.2",
     "material-ui": "^1.0.0-beta.35",
