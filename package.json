@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf dist/",
     "development": "npm run clean && BABEL_ENV=development webpack --config webpack.config.dev.js --colors --display-modules",
-    "lint": "eslint src",
+    "lint": "eslint src/app",
     "postmerge": "npm install",
     "postwrite": "npm install",
     "precommit": "npm run lint",
