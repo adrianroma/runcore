@@ -23,7 +23,10 @@
     "material-ui": "^1.0.0-beta.35",
     "proptypes": "^1.1.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "webpack": "^4.1.0",
+    "webpack-dev-middleware": "^3.0.0",
+    "webpack-hot-middleware": "^2.21.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -50,10 +53,7 @@
     "react-transform-catch-errors": "^1.0.2",
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.5.0",
-    "style-loader": "^0.20.2",
-    "webpack": "^3.11.0",
-    "webpack-dev-middleware": "^2.0.5",
-    "webpack-hot-middleware": "^2.21.0"
+    "style-loader": "^0.20.2"
   },
   "repository": {
     "type": "git",
