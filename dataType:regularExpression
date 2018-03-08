@@ -11,7 +11,7 @@ HEX:^#?([a-f0-9]{6}|[a-f0-9]{3})$
 currency:\b^MXN$\b|\b^USD$\b|\b^EUR$\b
 60:^([1-9]|[1-5][0-9]|60|all)$
 nick:^[0-9a-zA-Z ]{1,9}$
-email:(^[a-zA-Z0-9_.]*[@])([@]*[a-zA-Z0-9\-.]*)
+email:(^[a-zA-Z0-9_.-]*[@])([@]*[a-zA-Z0-9\-.]*)
 mobile:^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$
 password:^[a-z0-9_-]{6,18}$
 boolean:\b^TRUE$\b|\b^FALSE\b
@@ -54,3 +54,4 @@ allow:\b^ALLOWED$\b|\b^DENIED$\b|\b^SUSPEND$\b
 privilege:\b^FULL$\b|\b^SIMPLE$\b|\b^BASIC$\b|\b^MASTER$\b
 isCM:['][a-z-.]*[']
 neverHASpoint:^[^.]*$
+characterArrobaInWord:^.*@.*$
