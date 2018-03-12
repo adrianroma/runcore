@@ -1,12 +1,10 @@
-# Node build artifacts
+# Don't check auto-generated stuff into git
+coverage
+build
 node_modules
-npm-debug.log
+stats.json
 
-# Local development
-*.env
-*.dev
+# Cruft
 .DS_Store
-
-# Docker
-Dockerfile
-docker-compose.yml
+npm-debug.log
+.idea
